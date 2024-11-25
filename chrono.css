@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Start from the top */
+    min-height: 100vh;
+    background-color: #99d9ea;
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    border-bottom: 3px solid black;
+    position: relative; /* Adjusted to relative */
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the navbar items */
+}
+
+.navbar li {
+    margin: 0 5px; /* Spacing between items */
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 7px 15px; /* Add some horizontal padding */
+    display: block;
+    text-align: center;
+    border: 3px solid black;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+.chronometre {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    width: 400px;
+    text-align: center;
+    margin-top: 20px; /* Add some space below the navbar */
+}
+
+.time {
+    margin: auto;
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.time span {
+    font-family: 'Dancing Script';
+    padding: 5px;
+    width: 40px;
+}
+
+.controls {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #00a2e8;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 35%;
+    border: 0;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(0.9);
+}
